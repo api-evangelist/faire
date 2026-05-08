@@ -1,0 +1,29 @@
+aid: faire
+url: https://raw.githubusercontent.com/api-evangelist/faire/refs/heads/main/apis.yml
+name: Faire
+x-type: company
+description: >-
+  Faire is a wholesale marketplace connecting independent brands with retailers. APIs cover orders, products, brands, retailer onboarding, and shipments.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - E-Commerce
+  - Marketplace
+  - Wholesale
+  - B2B
+  - Retail
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://www.faire.com/
+  - type: Plans
+    url: plans/faire-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/faire-rate-limits.yml
+  - type: FinOps
+    url: finops/faire-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
