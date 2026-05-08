@@ -2,28 +2,53 @@ aid: faire
 url: https://raw.githubusercontent.com/api-evangelist/faire/refs/heads/main/apis.yml
 name: Faire
 x-type: company
-description: >-
-  Faire is a wholesale marketplace connecting independent brands with retailers. APIs cover orders, products, brands, retailer onboarding, and shipments.
+description: 'Faire is a wholesale marketplace connecting independent retailers with brands. The Faire
+  External API v2 supports both sides of the marketplace: brand-side endpoints for products, orders, inventory,
+  and shipments, and retailer-side endpoints for browsing and ordering.'
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - E-Commerce
-  - Marketplace
-  - Wholesale
-  - B2B
-  - Retail
+- Marketplace
+- Wholesale
+- Retail
+- Ecommerce
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+- aid: faire:external-api-v2-brand
+  name: Faire External API v2 (Brand)
+  description: REST API for Faire brands to manage products, inventory, orders, shipments, and returns.
+  humanURL: https://developers.faire.com/docs
+  tags:
+  - REST
+  - Brand
+  - Wholesale
+  properties:
+  - type: Documentation
+    url: https://developers.faire.com/docs
+- aid: faire:external-api-v2-retailer
+  name: Faire External API v2 (Retailer)
+  description: REST API endpoints for retailers to browse products, place orders, and manage their account
+    on Faire.
+  humanURL: https://developers.faire.com/docs
+  tags:
+  - REST
+  - Retailer
+  - Wholesale
+  properties:
+  - type: Documentation
+    url: https://developers.faire.com/docs
 common:
-  - type: Website
-    url: https://www.faire.com/
-  - type: Plans
-    url: plans/faire-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/faire-rate-limits.yml
-  - type: FinOps
-    url: finops/faire-finops.yml
+- type: Website
+  url: https://www.faire.com/
+- type: Developer
+  url: https://developers.faire.com/docs
+- type: Plans
+  url: plans/faire-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/faire-rate-limits.yml
+- type: FinOps
+  url: finops/faire-finops.yml
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com

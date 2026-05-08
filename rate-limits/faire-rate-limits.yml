@@ -7,26 +7,26 @@ created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- E-Commerce
 - Marketplace
 - Wholesale
-- B2B
 - Retail
+- Ecommerce
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for Faire. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: Faire External API v2 enforces per-token rate limits and returns HTTP 429 with Retry-After
+  when exceeded. Specific RPS thresholds are not openly published.
+notes: Use pagination and webhooks to reduce polling.
 sources:
-- https://www.faire.com/
+- https://developers.faire.com/docs
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+- name: Default External API
+  scope: token
+  metric: requests
+  limit: not publicly documented
+  notes: Honor 429 and Retry-After.
 policies:
 - name: Backoff Strategy
   description: Clients should implement exponential backoff with jitter and honor any Retry-After header.

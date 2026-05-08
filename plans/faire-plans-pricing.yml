@@ -7,35 +7,63 @@ created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- E-Commerce
 - Marketplace
 - Wholesale
-- B2B
 - Retail
+- Ecommerce
 - Plans
-description: Placeholder plans/pricing artifact for Faire. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled.
+description: Faire does not charge retailers a subscription; brands pay commission on first orders and
+  a lower rate on reorders. API access is free for active brands and retailers.
+notes: Faire's commercial model is commission-based, not subscription-based.
 sources:
 - https://www.faire.com/
+- https://developers.faire.com/docs
 plans:
-- id: faire-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers once pricing is reconciled.
+- id: faire-brand-commission
+  name: Brand Commission
+  type: paid
+  description: Faire brands pay a higher commission on first orders from new retailers and a lower commission
+    on reorders.
   entries:
-  - label: API Access
-    name: api_access
-    type: flat
-    metric: varies
+  - label: First Order Commission
+    name: first_order_commission
+    type: per-unit
+    metric: order_value
     limit: -1
     timeFrame: usage
     geo: global
     unit: 1
-    price: see https://www.faire.com/
+    price: see Faire brand agreement
+    userMultiplied: false
+  - label: Reorder Commission
+    name: reorder_commission
+    type: per-unit
+    metric: order_value
+    limit: -1
+    timeFrame: usage
+    geo: global
+    unit: 1
+    price: see Faire brand agreement
     userMultiplied: false
   elements:
-  - name: Pending Reconciliation
+  - name: API Access (included)
+- id: faire-retailer-free
+  name: Retailer (Free)
+  type: free
+  description: Retailers do not pay subscription fees; Faire offers Net 60 terms.
+  entries:
+  - label: Retailer Account
+    name: retailer
+    type: flat
+    metric: account
+    limit: -1
+    timeFrame: perpetual
+    geo: global
+    unit: 1
+    price: free
+    userMultiplied: false
+  elements:
+  - name: Browse / Order
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
