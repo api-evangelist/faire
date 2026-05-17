@@ -1,7 +1,7 @@
 aid: faire
 url: https://raw.githubusercontent.com/api-evangelist/faire/refs/heads/main/apis.yml
 name: Faire
-x-type: company
+kind: company
 description: 'Faire is a wholesale marketplace connecting independent retailers with brands. The Faire
   External API v2 supports both sides of the marketplace: brand-side endpoints for products, orders, inventory,
   and shipments, and retailer-side endpoints for browsing and ordering.'
