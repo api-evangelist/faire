@@ -5,7 +5,7 @@ kind: company
 description: 'Faire is a wholesale marketplace connecting independent retailers with brands. The Faire
   External API v2 supports both sides of the marketplace: brand-side endpoints for products, orders, inventory,
   and shipments, and retailer-side endpoints for browsing and ordering.'
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Marketplace
   - Wholesale
