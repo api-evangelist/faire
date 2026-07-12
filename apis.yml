@@ -39,6 +39,10 @@ apis:
     - type: Documentation
       url: https://developers.faire.com/docs
 common:
+  - type: VulnerabilityDisclosure
+    url: security/faire-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/faire-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/Faire
   - type: LinkedIn
