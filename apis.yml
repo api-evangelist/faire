@@ -40,7 +40,7 @@ tags_raw:
   - Retail
   - Ecommerce
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis:
   - aid: faire:external-api-v2-brand
@@ -71,6 +71,8 @@ apis:
     - type: Documentation
       url: https://developers.faire.com/docs
 common:
+  - url: https://www.faire.com/news
+    type: Blog
   - type: VulnerabilityDisclosure
     url: security/faire-vulnerability-disclosure.yml
   - type: DomainSecurity
