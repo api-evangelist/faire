@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "faire",
+    "captured_at": "2026-10-11T185227",
+    "source_url": "https://www.faire.com/",
+    "source_type": "Website",
+    "file": "faire-2026-10-11T185227.png",
+    "bytes": 671476,
+    "capture": "playwright-local"
+  }
+]
