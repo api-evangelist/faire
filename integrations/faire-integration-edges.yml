@@ -1,16 +1,34 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/faire/integrations
 - https://n8n.io/integrations/faire/
 - https://composio.dev/toolkits/faire
 - https://monid.ai/tools/faire
 checked:
+- clover/integrations/clover-integration-edges.yml
 - https://composio.dev/toolkits/faire
 - https://monid.ai/tools/faire
 - https://n8n.io/integrations/faire/
 - https://zapier.com/apps/faire/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: Clover (own)
+  partner: clover
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.clover.com/appmarket/apps/PWAFM402C7JFW
+  mirror_of: clover/integrations/clover-integration-edges.yml
+  apps:
+  - Faire
+  listing_count: 1
+  detected: '2026-10-14'
+  detected_by: mirror-platform-listings.py
+  category: BOOK_STORE
 templates: []
