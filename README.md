@@ -1,4 +1,4 @@
-# Faire (faire)
+# Faire
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,30 +66,103 @@
 
 Faire is a wholesale marketplace connecting independent retailers with brands. The Faire External API v2 supports both sides of the marketplace: brand-side endpoints for products, orders, inventory, and shipments, and retailer-side endpoints for browsing and ordering.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/faire/refs/heads/main/apis.yml)
+**Areas:** Marketplace · Wholesale · Retail · E-Commerce
 
-## Type
-- **x-type:** company
+## Faire on APIs.io
 
-## Tags
-- Marketplace, Wholesale, Retail, Ecommerce
+Everything profiled for Faire is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/faire/](https://apis.io/providers/faire/)** — or go straight to one of the APIs or properties below.
 
-## APIs
-- **Faire External API v2 (Brand)** — products, inventory, orders, shipments, returns. Docs: https://developers.faire.com/docs
-- **Faire External API v2 (Retailer)** — browsing and ordering for retailer accounts.
+### APIs (2)
 
-## Timestamps
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Faire External API v2 (Brand)](https://apis.io/apis/faire/external-api-v2-brand/) — REST API for Faire brands to manage products, inventory, orders, shipments, and returns.
+- [Faire External API v2 (Retailer)](https://apis.io/apis/faire/external-api-v2-retailer/) — REST API endpoints for retailers to browse products, place orders, and manage their account on Faire.
 
-## Common Properties
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Faire Domain Security](https://apis.io/security/faire/faire-domain-security/)
+- [Faire Vulnerability Disclosure](https://apis.io/security/faire/faire-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Faire Plans Pricing](https://apis.io/plans/faire/faire-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Faire Rate Limits](https://apis.io/rate-limits/faire/faire-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Faire Finops](https://apis.io/finops/faire/faire-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.faire.com/)
-- [Developer Portal](https://developers.faire.com/docs)
-- [Plans](plans/faire-plans-pricing.yml) — free for retailers; brand commission-based (reconciled: false)
-- [RateLimits](rate-limits/faire-rate-limits.yml) — per-token throttle; honor 429 (reconciled: false)
-- [FinOps](finops/faire-finops.yml) — FOCUS-aligned commission model (reconciled: false)
+- [Blog](https://www.faire.com/news)
+- [GitHub](https://github.com/Faire)
 
-## Maintainers
-**FN:** Kin Lane
+## API Evangelist rating
 
-**Email:** kin@apievangelist.com
+**Kin Score 8.8** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/faire/](https://apis.io/providers/faire/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Faire: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/faire/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
